@@ -1,0 +1,16 @@
+{
+  "name": "purchase_order_cdc",
+  "config": {
+    "connector.class": "io.debezium.connector.postgresql.PostgresConnector",
+    "tasks.max": "1",
+    "database.hostname": "postgres",
+    "database.port": "5432",
+    "database.user": "odoo",
+    "database.password": "odoo",
+    "database.dbname" : "bigfan",
+    "database.server.name": "dbserver1",
+    "schema.include.list": "public",
+    "table.include.list": "public.purchase_order,public.stock_picking"
+
+  }
+}
